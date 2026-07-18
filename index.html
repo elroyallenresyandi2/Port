@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elroy Allen Resyandi — Portofolio</title>
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="mainnav">
+    <div class="logo">E<span>.</span>A<span>.R</span></div>
+    <div class="nav-links">
+      <a href="#tentang"><span>01 /</span> Tentang</a>
+      <a href="#proyek"><span>02 /</span> Proyek</a>
+      <a href="#kontak"><span>03 /</span> Kontak</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — EDIT: nama, peran, deskripsi singkat di sini
+  ============================================================ -->
+  <header class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Portofolio Digital — Indeks 2026</p>
+      <h1 class="hero-name">
+        <span><em>Elroy Allen</em></span>
+        <span><em>Resyandi</em></span>
+      </h1>
+      <p class="hero-role">Developer &amp; digital creator — merancang serta membangun produk digital dari konsep sampai jadi, dengan perhatian pada detail kecil.</p>
+      <div class="hero-cta">
+        <a href="#proyek" class="btn-primary">Lihat Proyek</a>
+        <a href="#kontak" class="btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="scroll-cue">GULIR <span class="arrow">↓</span></div>
+  </header>
+
+  <!-- ============================================================
+       TENTANG — EDIT: bio dan daftar skill di sini
+  ============================================================ -->
+  <section id="tentang">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 01</span>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead reveal">Belajar teknologi, membangun hal-hal digital, dan terus mencoba sesuatu yang baru.</p>
+      <div class="about-body reveal">
+        <p>Saya seorang pembelajar teknologi yang suka mengubah ide menjadi sesuatu yang bisa dipakai — mulai dari antarmuka yang rapi sampai sistem yang berjalan mulus di baliknya. Halaman ini adalah ruang kerja saya yang terus berkembang, tempat proyek-proyek baru muncul seiring saya belajar hal baru.</p>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>UI / UX Dasar</li>
+          <li>Problem Solving</li>
+          <li>Git &amp; GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYEK — proyek dirender otomatis dari array `projects`
+       di file script.js. Cukup edit array-nya di sana.
+  ============================================================ -->
+  <section id="proyek">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 02</span>
+      <h2 class="section-title">Proyek</h2>
+      <div class="section-line"></div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="carousel-prev" type="button" aria-label="Proyek sebelumnya">←</button>
+        <button class="carousel-btn" id="carousel-next" type="button" aria-label="Proyek berikutnya">→</button>
+      </div>
+    </div>
+    <p class="work-note reveal">Pilihan proyek yang pernah saya kerjakan — geser untuk melihat lebih banyak. Tambahkan proyekmu sendiri lewat data di file script.js.</p>
+    <div class="project-grid" id="project-grid"></div>
+    <div class="carousel-progress"><div class="carousel-progress-bar" id="carousel-progress-bar"></div></div>
+  </section>
+
+  <!-- ============================================================
+       KONTAK — EDIT: email dan link sosial media di sini
+  ============================================================ -->
+  <section id="kontak">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 03</span>
+      <h2 class="section-title">Kontak</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner reveal">
+      <a href="mailto:allenresyandi@gmail.com" class="contact-email">allenresyandi@gmail.com</a>
+      <div class="social-row">
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Elroy Allen Resyandi</span>
+    <button id="back-to-top">Kembali ke atas ↑</button>
+  </footer>
+
+  <!-- ============================================================
+       MODAL DETAIL PROYEK — konten diisi otomatis lewat script.js,
+       muncul saat tombol "Lihat Detail" di kartu proyek dipencet.
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Tutup detail proyek">✕</button>
+      <div class="modal-visual" id="modal-visual"></div>
+      <div class="modal-body">
+        <div class="modal-meta" id="modal-meta"></div>
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-role" id="modal-role"></p>
+        <p class="modal-details" id="modal-details"></p>
+        <ul class="modal-highlights" id="modal-highlights"></ul>
+        <div class="modal-tags" id="modal-tags"></div>
+        <a href="#" class="modal-link hidden" id="modal-link" target="_blank" rel="noopener">Kunjungi Proyek ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

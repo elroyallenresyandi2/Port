@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elroy Allen Resyandi — Portofolio</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="mainnav">
+    <div class="logo">E<span>.</span>A<span>.R</span></div>
+    <div class="nav-links">
+      <a href="#tentang"><span>01 /</span> Tentang</a>
+      <a href="#proyek"><span>02 /</span> Proyek</a>
+      <a href="#sertifikat"><span>03 /</span> Sertifikat</a>
+      <a href="#kontak"><span>04 /</span> Kontak</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — EDIT: nama, peran, deskripsi singkat di sini
+  ============================================================ -->
+  <header class="hero" id="hero">
+    <div class="hero-decor" aria-hidden="true">
+      <div class="orbit-ring">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="92" fill="none" stroke="#3d7bf5" stroke-width="0.6" stroke-dasharray="2 7"/>
+          <circle cx="100" cy="100" r="68" fill="none" stroke="#9c2b3a" stroke-width="0.5" stroke-dasharray="1 5" stroke-opacity="0.8"/>
+          <circle cx="100" cy="100" r="42" fill="none" stroke="#f4f4f2" stroke-width="0.4" stroke-opacity="0.25"/>
+          <line x1="100" y1="2" x2="100" y2="14" stroke="#f4f4f2" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="100" y1="186" x2="100" y2="198" stroke="#f4f4f2" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="2" y1="100" x2="14" y2="100" stroke="#f4f4f2" stroke-width="0.6" stroke-opacity="0.5"/>
+          <line x1="186" y1="100" x2="198" y2="100" stroke="#f4f4f2" stroke-width="0.6" stroke-opacity="0.5"/>
+          <circle cx="100" cy="100" r="3" fill="#3d7bf5"/>
+        </svg>
+      </div>
+      <span class="particle particle-blue" style="top:22%; left:10%; --dx:12px; --dy:-16px; animation-duration:9s;"></span>
+      <span class="particle particle-maroon" style="top:65%; left:6%; --dx:-10px; --dy:14px; animation-duration:12s; animation-delay:0.6s;"></span>
+      <span class="particle particle-blue" style="top:38%; left:24%; --dx:-14px; --dy:10px; animation-duration:10s; animation-delay:1.4s;"></span>
+      <span class="particle particle-blue" style="top:15%; left:46%; --dx:10px; --dy:12px; animation-duration:8.5s; animation-delay:2s;"></span>
+      <span class="particle particle-maroon" style="top:78%; left:34%; --dx:14px; --dy:-10px; animation-duration:11s; animation-delay:0.3s;"></span>
+      <span class="particle particle-blue" style="top:52%; left:58%; --dx:-12px; --dy:-14px; animation-duration:13s; animation-delay:1.8s;"></span>
+      <span class="particle particle-blue" style="top:12%; left:70%; --dx:-10px; --dy:16px; animation-duration:9.5s; animation-delay:0.9s;"></span>
+      <span class="particle particle-maroon" style="top:85%; left:64%; --dx:12px; --dy:-12px; animation-duration:10.5s; animation-delay:2.4s;"></span>
+      <div class="scan-line"></div>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow">Portofolio Digital — Indeks 2026</p>
+      <h1 class="hero-name">
+        <span><em>Elroy Allen</em></span>
+        <span><em>Resyandi</em></span>
+      </h1>
+      <p class="hero-role">Developer &amp; digital creator — merancang serta membangun produk digital dari konsep sampai jadi, dengan perhatian pada detail kecil.</p>
+      <div class="hero-cta">
+        <a href="#proyek" class="btn-primary">Lihat Proyek</a>
+        <a href="#kontak" class="btn-ghost">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="scroll-cue">GULIR <span class="arrow">↓</span></div>
+  </header>
+
+  <!-- ============================================================
+       TENTANG — EDIT: bio dan daftar skill di sini
+  ============================================================ -->
+  <section id="tentang">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 01</span>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead reveal">Belajar teknologi, membangun hal-hal digital, dan terus mencoba sesuatu yang baru.</p>
+      <div class="about-body reveal">
+        <p>Saya seorang pembelajar teknologi yang suka mengubah ide menjadi sesuatu yang bisa dipakai — mulai dari antarmuka yang rapi sampai sistem yang berjalan mulus di baliknya. Halaman ini adalah ruang kerja saya yang terus berkembang, tempat proyek-proyek baru muncul seiring saya belajar hal baru.</p>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript</li>
+          <li>UI / UX Dasar</li>
+          <li>Problem Solving</li>
+          <li>Git &amp; GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYEK — proyek dirender otomatis dari array `projects`
+       di file script.js. Cukup edit array-nya di sana.
+  ============================================================ -->
+  <section id="proyek">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 02</span>
+      <h2 class="section-title">Proyek</h2>
+      <div class="section-line"></div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="carousel-prev" type="button" aria-label="Proyek sebelumnya">←</button>
+        <button class="carousel-btn" id="carousel-next" type="button" aria-label="Proyek berikutnya">→</button>
+      </div>
+    </div>
+    <p class="work-note reveal">Pilihan proyek yang pernah saya kerjakan — geser untuk melihat lebih banyak. Tambahkan proyekmu sendiri lewat data di file script.js.</p>
+    <div class="project-grid" id="project-grid"></div>
+    <div class="carousel-progress"><div class="carousel-progress-bar" id="carousel-progress-bar"></div></div>
+  </section>
+
+  <!-- ============================================================
+       SERTIFIKAT — sertifikat/lomba dirender otomatis dari array
+       `certificates` di file script.js. Cukup edit array-nya di sana.
+  ============================================================ -->
+  <section id="sertifikat">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 03</span>
+      <h2 class="section-title">Sertifikat &amp; Prestasi</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="work-note reveal">Sertifikat, penghargaan, dan pencapaian dari lomba atau pelatihan yang pernah saya ikuti.</p>
+    <div class="cert-grid" id="cert-grid"></div>
+  </section>
+
+  <!-- ============================================================
+       KONTAK — EDIT: email dan link sosial media di sini
+  ============================================================ -->
+  <section id="kontak">
+    <div class="section-head reveal">
+      <span class="section-num">Indeks / 04</span>
+      <h2 class="section-title">Kontak</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-inner reveal">
+      <a href="mailto:allenresyandi@gmail.com" class="contact-email">allenresyandi@gmail.com</a>
+      <div class="social-row">
+        <a href="https://github.com/elroyallenresyandi2" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/zeo_wht/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Elroy Allen Resyandi</span>
+    <button id="back-to-top">Kembali ke atas ↑</button>
+  </footer>
+
+  <!-- ============================================================
+       MODAL DETAIL PROYEK — konten diisi otomatis lewat script.js,
+       muncul saat tombol "Lihat Detail" di kartu proyek dipencet.
+  ============================================================ -->
+  <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Tutup detail proyek">✕</button>
+      <div class="modal-visual" id="modal-visual"></div>
+      <div class="modal-body">
+        <div class="modal-meta" id="modal-meta"></div>
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-role" id="modal-role"></p>
+        <p class="modal-details" id="modal-details"></p>
+        <ul class="modal-highlights" id="modal-highlights"></ul>
+        <div class="modal-tags" id="modal-tags"></div>
+        <a href="#" class="modal-link hidden" id="modal-link" target="_blank" rel="noopener">Kunjungi Proyek ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       LIGHTBOX SERTIFIKAT — menampilkan gambar sertifikat lebih besar
+       saat kartu sertifikat diklik.
+  ============================================================ -->
+  <div class="lightbox-overlay" id="lightbox-overlay" aria-hidden="true">
+    <button class="modal-close" id="lightbox-close" type="button" aria-label="Tutup pratinjau sertifikat">✕</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
